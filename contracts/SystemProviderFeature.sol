@@ -11,7 +11,7 @@ contract SystemProviderFeature {
   }
  
   modifier onlySystem() {
-    require(msg.sender == system);
+    require(msg.sender == address(system));
     _;
   }
 

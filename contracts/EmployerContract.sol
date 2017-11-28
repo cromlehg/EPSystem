@@ -15,7 +15,7 @@ contract EmployerContract is Ownable {
 
   ContractState public contractState;
 
-  function setDescr(string newDescr) onlySystem {
+  function setDescr(string newDescr) public onlySystem {
     descr = newDescr;
   }
 
